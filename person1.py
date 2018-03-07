@@ -5,7 +5,10 @@ chars = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,./;'[]
 times = int(input('[.]Number of passwords?\n[.]'))
 length = int(input('[.]Password length?\n[.]'))
 
+
 f = open('path/location/','w')
+
+
 
 for i in range(times):
 	password = ''
@@ -14,11 +17,8 @@ for i in range(times):
 
 	print('[.]',password,sep='')
 
-
-
-#for -------
-
 	password = password + '\n'
 	f.write(password)
 
 f.close()
+
